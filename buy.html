@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" style="padding-top: 52px;">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: white;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+	.text1{
+	color: red;
+	font-size:15px;
+	font-family:serif;
+	}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"style="padding-top: 0px; padding-bottom: 0px;"><img src="C:\Users\Harshal\Desktop\anti.png" style="width: 150px; height: 50px;padding-top: 0;"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"style="padding-top: 23px; padding-bottom: 3px; padding-left: 0px;">Type<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Rent</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Flatemates</a></li>
+            <li role="separator" class="divider"></li>
+           
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" style="margin-left: 200px;">
+        <div class="form-group">
+         <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <input type="text" class="form-control" placeholder="Search by location" style="width: 350px; padding-left: 12px;">
+        </div>
+        <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+     <ol class="breadcrumb">
+  <li>Filter your search</li>
+</ol>
+	  <hr> 
+	  <ol class="breadcrumb">
+  <li>Apartments</li>
+</ol>
+
+<div class="checkbox">
+	  <label class="checkbox-inline"><input type="checkbox" value="">1 RK &nbsp; &nbsp; &nbsp; &nbsp; </label>
+<label class="checkbox-inline"><input type="checkbox" value="">1 BHK</label>
+</div>
+
+	<div class="checkbox">
+	  <label class="checkbox-inline"><input type="checkbox" value="">2 BHK &nbsp; &nbsp; &nbsp; </label>
+<label class="checkbox-inline"><input type="checkbox" value="">3 BHK</label>
+</div>
+<div class="checkbox">
+	  <label class="checkbox-inline"><input type="checkbox" value="">4 BHK &nbsp; &nbsp;&nbsp; &nbsp;</label>
+<label class="checkbox-inline"><input type="checkbox" value="">4+ BHK</label>
+</div>
+<hr>
+ 
+ 
+ <ol class="breadcrumb">
+  <li>Rent Range (per/month)</li>
+</ol>
+
+<div class="form-group-horizontal">
+  <label for="usr">Max Range</label>
+  <input type="text" class="form-control" id="usr" style="width:150px;">
+  
+  <label for="usr">Min Range</label>
+  <input type="text" class="form-control" id="usr" style="width:150px;">
+  
+</div>
+
+    </div>
+	
+	
+	
+	
+    <div class="col-sm-7 text-left" style="padding-top: 50px;">
+      <h1>Welcome</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+      <h3>Test</h3>
+      <p>Lorem ipsum...</p>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
+

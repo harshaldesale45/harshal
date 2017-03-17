@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+
+  
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+     margin-bottom: 0;
+	 border: 0;
+	  background-color: transparent;
+	   color: black;
+    }
+	.navbar-header{
+	background color: #217CDE;}
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 15px;
+      background-color: white;
+      height: 100%;
+    }
+	.nav{
+	float: inline;
+	}
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: white;
+      color: black;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+	.btn-group
+	{
+	padding:15px;
+	}
+	
+	 
+
+caption-header {
+    display: inline-block;
+    background-color: #fff;
+    z-index: 2;
+    font-size: 30px;
+    font-weight: 300;
+    position: relative;
+}
+.active{
+padding-right: 15px;
+}
+h1{
+    font-family:Lucida Console;
+	color: white;
+	text-align:center;
+}
+
+
+}
+.dropdown-menu
+{color: #f4511e;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+	  height: 50%;
+      margin: auto;
+	  border radius: 50%;
+  }
+  
+  .frameContent
+     {
+        background-image: url(final.jpg); 
+        background-size: 100%;
+        vertical-align: top; 
+        border-left: #FFFFFF 20px solid;
+        border-right: #FFFFFF 20px solid;
+        border-top: #FFFFFF 15px solid;
+        padding: 25px 10px 10px 10px;
+        height:100%;
+        box-shadow: 2px 2px 2px;
+        opacity: 100%;
+        filter: alpha(opacity=50);
+    }
+  
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-botom: 70px;">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <li><a class="active" href="#"><img src="anti.png" style="width: 150px; height: 50px;margin-bottom=60px;"/></a></li>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" style="margin-bottom: 70px;">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+		<a style="top: 0px;" href="#"><button type="button" class="btn btn-success">Post your properties </button></a>
+		</li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Email harshaldesale45@gmail.com</a></li>
+          <li><a href="#">Watsapp 9702901681</a></li>
+          <li><a href="#">apply for jobs</a></li> 
+        </ul>
+      </li>
+	  
+		<li>
+		<div class="btn-group">
+   <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm"><span class="glyphicon glyphicon-log-in">  LogIn </a></button>
+  <div>
+  </button>
+  </nav>
+  <div class="frame"><div class="frameContent" style="border-left-width: 0px; border-top-width: 0px;">
+  
+  <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <br>
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+              <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+              <li class=""><a href="#why" data-toggle="tab">Why?</a></li>
+            </ul>
+        </div>
+      <div class="modal-body" style="padding-left: 30px; border-top-width: 5px;">
+        <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in" id="why">
+        <p>We need this information so that you can receive access to the site and its content. Rest assured your information will not be sold, traded, or given to anyone.</p>
+        <p></p><br> Please contact <a mailto:href="JoeSixPack@Sixpacksrus.com"></a>JoeSixPack@Sixpacksrus.com</a> for any other inquiries.</p>
+        </div>
+        <div class="tab-pane fade active in" id="signin">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Alias:</label>
+              <div class="controls">
+                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="JoeSixpack" class="input-medium" required="">
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="passwordinput">Password:</label>
+              <div class="controls">
+                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+              </div>
+            </div>
+
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="control-group">
+              <label class="control-label" for="rememberme"></label>
+              <div class="controls">
+                <label class="checkbox inline" for="rememberme-0">
+                  <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
+                  Remember me
+                </label>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <button id="signin" name="signin" class="btn btn-success">Sign In</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="signup">
+		
+            <form class="form-horizontal" action='authenticate.php' method='post'>
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="Email">Email:</label>
+              <div class="controls">
+                <input id="Email" name="Email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Alias:</label>
+              <div class="controls">
+                <input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="password">Password:</label>
+              <div class="controls">
+                <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+                <em>1-8 Characters</em>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+              <div class="controls">
+                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Multiple Radios (inline) -->
+            <br>
+            <div class="control-group">
+              <label class="control-label" for="humancheck">Humanity Check:</label>
+              <div class="controls">
+                <label class="radio inline" for="humancheck-0">
+                  <input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">I'm a Robot</label>
+                <label class="radio inline" for="humancheck-1">
+                  <input type="radio" name="humancheck" id="humancheck-1" value="human">I'm Human</label>
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+                <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+      <center>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+		
+      </ul>
+      
+   
+  </div>
+  
+
+  <div class="container-fluid row content">
+ 
+    
+    <div class="foo col-sm-8" style="left:300px">
+	
+	
+     
+      
+      
+	  
+      <ul class="nav nav-tabs" style="padding-bottom: 0px; margin-bottom: 40px; border-bottom-width: 2px;">
+	  
+  <li role="presentation" class="active"><a href="#" style="padding-top: 10px; padding right:= 40px; padding-left: 40px;">Buy</a></li>
+  <li role="presentation"><a href="#" style="padding-top: 10px; padding right:= 40px; padding-left: 40px;">Sale</a></li>
+  <li role="presentation"><a href="#" style="padding-top: 10px; padding right:= 40px; padding-left: 40px;">Rent</a></li>
+  <li role="presentation"><a href="#" style="padding-top: 10px; padding right:= 40px; padding-left: 40px;">Flatemates</a></li> 
+ </ul>
+  
+
+
+
+<div class="btn-group horizontal" role="group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 15px 20px;">
+      Mumbai  
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Vashi</a></li>
+      <li><a href="#">Nerul</a></li>
+	  <li><a href="#">Panvel</a></li>
+	  <li><a href="#">Kharghar</a></li>
+    </ul>
+	</div>
+	<div class="btn-group" role="group">
+	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 15px 20px;" >
+      Any BHK
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">1 BHK</a></li>
+      <li><a href="#">2 BHK</a></li>
+	  <li><a href="#">3 BHK</a></li>
+	  <li><a href="#">4 BHK</a></li>
+	  
+    </ul>
+  <form class="navbar-form navbar-left" role="search"style="
+    padding-left: 0px;
+    padding-right: 0px;">
+ 
+   <input type="text" class="form-control" placeholder="Search by location" style="width: 300px; height: 45px;">
+ 
+  <button type="submit" style="89px; height:45px;" class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
+</form>
+  </div>
+  </div>
+  
+  
+  
+ 
+    </div>
+	</div>
+	
+	
+	
+	</div>
+    
+
+</div></div>
+</div>
+<footer class="container-fluid text-center">
+
+<img src="why3.png"style="margin-bottom: 15px;">
+<img src="dodo.png">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="buid4.jpg" alt="Chania">
+      <div class="carousel-caption">
+        <h3>Mumbai</h3>
+        <p>Awsome flts in mumbai</p>
+      </div>
+    </div>
+
+    
+
+    <div class="item">
+      <img src="build5.jpeg" alt="Flower">
+      <div class="carousel-caption">
+        <h3>Nerul</h3>
+        <p>Awsome flts in Nerul</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="baba.jpg" alt="buiding">
+      <div class="carousel-caption">
+        <h3>Kharghar</h3>
+        <p>Flats in kharghar </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  
+  
+</footer>
+
+</body>
+</html>
+
